@@ -1,0 +1,128 @@
+div.an-contact-header {
+  background-color: black;
+  padding: 2px;
+}
+
+div.an-contact-header-items {
+  align-items: center;
+  height: 8vh;
+}
+
+div.an-header {
+  background-color: #ddba3d;
+  background: url("../images/bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+p.an-paragraphe-header {
+  width: 600px;
+}
+div.an-container-header {
+  overflow: auto;
+}
+div.an-content-header {
+  margin: 35vh 0;
+}
+div.an-categorie {
+  padding: 30px 95px;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: -100px;
+  background: white;
+}
+.align-self-center {
+  align-self: center;
+}
+div.an-professional {
+  background: #d88f20;
+}
+.mb-6 {
+  margin-bottom: 100px;
+}
+.mt-6 {
+  margin-top: 100px;
+}
+div.an-service-items {
+  padding: 50px 5px;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+  background: white;
+  text-align: center;
+  margin: 10px;
+}
+div.an-client-items {
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 18px;
+  margin-bottom: 35px;
+}
+.an-img-client {
+  border-radius: 50%;
+}
+.an-nom-client {
+  margin-bottom: 0px;
+}
+.f-size-55 {
+  font-size: 55px;
+}
+.an-footer {
+  background-color: #ffc107;
+}
+.mt-0 {
+  margin: 0;
+}
+.nav-link {
+  margin-right: 45px;
+}
+.nav-link:hover {
+  font-weight: bold;
+  color: black;
+}
+.an-logo-upper {
+  font-size: 35px;
+  font-weight: bold;
+}
+.an-categorie p {
+  font-size: 35px;
+  margin: 0;
+}
+.p-relative {
+  position: relative;
+}
+
+.an-scare-logo {
+  position: absolute;
+  width: 100%;
+  border: solid 1px;
+  top: 21px;
+  left: 31px;
+  height: 25px;
+}
+/* div.an-categorie:hover {
+  background-color: #ffc107;
+  transition: border-color 0.15s ease-in-out;
+} */
+.an-follow a i {
+  font-size: 30px !important;
+  padding: 0 15px 0 15px;
+  color: black;
+}
+.an-follow a {
+  text-decoration: none;
+}
+.an-font-awesome {
+  background: black;
+  display: inline-table;
+  width: 70px;
+  border-radius: 50%;
+  height: 70px;
+  padding-top: 10px;
+  color: #ffc107;
+}
+.an-active {
+  color: black !important;
+  font-weight: bold !important;
+}
+.an-fontawesome-header {
+  font-weight: 20px !important;
+}
+.an-fontawesome-footer {
+  font-size: 50px !important;
+}

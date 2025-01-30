@@ -1,0 +1,41 @@
+{% extends 'scm/base.html' %}
+{% load static %}
+
+{% block title %} Services {% endblock %}
+{% block content %}
+<!-- SECTION OUR SERVICE -->
+<div class="an-service mb-6">
+    <h2 class="text-center mb-5 text-uppercase">
+        Our Services
+    </h2>
+    <div class="container">
+        <div class="d-flex justify-content-between">
+            <div></div>
+            <div class="an-service-items">
+                <img src="{% static 'scm/images/s1.png' %}" alt="" width="65" class="img img-fluid">
+                <h3>Maintenance</h3>
+                <p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                </p>
+            </div>
+            <div class="an-service-items">
+                <img src="{% static 'scm/images/s2.png' %}" alt="" width="65" class="img img-fluid">
+                <h3>Electrical</h3>
+                <p>
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                </p>
+            </div>
+            <div class="an-service-items">
+                <img src="{% static 'scm/images/s3.png' %}" alt="" width="65" class="img img-fluid">
+                <h3>Plumbing</h3>
+                <p>
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                </p>
+            </div>
+            <div></div>
+        </div>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-outline-warning mt-5">VIEW MORE</button>
+    </div>
+</div>
+{%endblock%}

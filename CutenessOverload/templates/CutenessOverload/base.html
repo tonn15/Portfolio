@@ -1,0 +1,249 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuteness Overload | {% block title %} {% endblock %}</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- custom -->
+    <link rel="stylesheet" href="{% static 'CutenessOverload/css/bootstrap/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'CutenessOverload/css/style.css' %}">
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="{% static 'CutenessOverload/css/slick/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'CutenessOverload/css/slick/slick.css' %}">
+</head>
+
+<body>
+    <!-- SECTION HEADER -->
+    <div class="an-header">
+        <div class="container overflow-auto">
+            <div class="margin-0-15 {% if request.resolver_match.url_name != 'index' %} an-display-none{% endif %}">
+                <div class="an-top-nav-header d-flex justify-content-center">
+                    <a href="#" class="an-top-nav-header-items">Best Sellers</a>
+                    <a href="#" class="an-top-nav-header-items">Gift Ideas</a>
+                    <a href="#" class="an-top-nav-header-items">New Releases</a>
+                    <a href="#" class="an-top-nav-header-items">Today's Deals</a>
+                    <a href="#" class="an-top-nav-header-items">Customer Service</a>
+                </div>
+            </div>
+            <!--    navbar-->
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#"><img src="{% static 'CutenessOverload/images/logo.png' %}" alt=""
+                        class="img img-fluid" width="200"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between mt-3" id="navbarSupportedContent">
+                    <form class="form-inline my-2 my-lg-0 an-wd-75">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text an-height-50" id="basic-addon1">@</span>
+                            </div>
+                            <input class="form-control mr-sm-2 an-height-50 an-border-radius-0" type="search"
+                                placeholder="Search" aria-describedby="basic-addon1" aria-label="Search">
+                        </div>
+                    </form>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="{% static 'CutenessOverload/images/flag-uk.png' %}" alt=""> Anglais
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"><img
+                                        src="{% static 'CutenessOverload/images/flag-uk.png' %}" alt=""> Malagasy</a>
+                                <a class="dropdown-item" href="#"><img
+                                        src="{% static 'CutenessOverload/images/flag-france.png' %}" alt="">
+                                    Francais</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><img
+                                        src="{% static 'CutenessOverload/images/flag-uk.png' %}" alt=""> Anglais</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--Caroussel-->
+            <div id="carouselExampleIndicators"
+                class="carousel slide {% if request.resolver_match.url_name != 'index' %} an-display-none{% endif %}"
+                data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active an-caroussel-tools">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-uppercase an-caroussel-title">Get Start Your favriot shoping</h1>
+                            <button class="btn btn-dark an-caroussel-btn">BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item an-caroussel-tools">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-uppercase an-caroussel-title">Sink in your mind that, The ball is in your
+                                court</h1>
+                            <button class="btn btn-dark an-caroussel-btn">BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item an-caroussel-tools">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="text-uppercase an-caroussel-title">The best way for begin beautifull</h1>
+                            <button class="btn btn-dark an-caroussel-btn">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% block content %}{% endblock %}
+    <div class="an-footer  text-light pb-5">
+        <div class="container text-center">
+            <h2 class=" text-uppercase pt-5">Cuteness Overload</h2>
+            <form class="form pt-5 d-flex justify-content-center">
+                <input type="email" class="form-control mx-5">
+                <button class="btn btn-light ">subscrib</button>
+            </form>
+            <div class="margin-0-15 mb-5">
+                <div class="an-top-nav-header d-flex justify-content-center">
+                    <a href="#" class="an-top-nav-header-items">Best Sellers</a>
+                    <a href="#" class="an-top-nav-header-items">Gift Ideas</a>
+                    <a href="#" class="an-top-nav-header-items">New Releases</a>
+                    <a href="#" class="an-top-nav-header-items">Today's Deals</a>
+                    <a href="#" class="an-top-nav-header-items">Customer Service</a>
+                </div>
+            </div>
+            <a href="#" class="an-link-item">Help Line Number : +261 34 21 208 03</a>
+            <p class="mt-5">© 2024 All Rights Reserved. Design by Antonio RANDRIANARISON</p>
+        </div>
+    </div>
+    <!-- script -->
+    <script src="{% static 'CutenessOverload/js/jq.js' %}"></script>
+    <script src="{% static 'CutenessOverload/js/bootstrap-4.js' %}"></script>
+    <script src="{% static 'CutenessOverload/js/slick/slick.js' %}"></script>
+    <script>
+        $('.six-item').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 6,
+            slidesToScroll: 6,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 6,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        $('.four-item').slick({
+
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        $('.three-item').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true
+        });
+    </script>
+</body>
+
+</html>

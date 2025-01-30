@@ -1,0 +1,78 @@
+{% load static %}
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jeep</title>
+    <link rel="stylesheet" href="{% static 'jeep/style.css' %}">
+</head>
+
+<body>
+    <div class="contenu">
+        <div class="center categorie">
+            <p class="categorie">Véhicules</p>
+        </div>
+        <h1>Luxe & Aventure : L'Emporium des Jeep Lovers</h1>
+        <div class="separateur"></div>
+        <div class="center">
+            <p class="description">Un Jeep lover conquiert tous les terrains avec aisance. Chaque trajet devient une
+                nouvelle aventure.</p>
+        </div>
+        <div class="info">
+            <img class="center info" src="{% static 'jeep/images/jeep.jpg' %}" alt="une image de voiture jeep">
+            <table class="info">
+                <tr>
+                    <th>Marque</th>
+                    <th>Coleur</th>
+                    <th>Vitesse</th>
+                    <th>Prix</th>
+                </tr>
+                <tr>
+                    <td>Wrangler</td>
+                    <td>Gris</td>
+                    <td>100km/h</td>
+                    <td>9.000$</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <div class="colonne1 colonne">
+                <h2>Configuration</h2>
+                <div class="configuration">
+                    <p>Moteur V6</p>
+                    <p>Boîte automatique</p>
+                    <p>Amortisseurs haute performance</p>
+                    <p>Jantes en alliage léger</p>
+                </div>
+            </div>
+            <div class="colonne2 colonne">
+                <h2>Modèle</h2>
+                <table class="model">
+                    <tr>
+                        <td>
+                            <p class="numero">1</p>
+                        </td>
+                        <td class="nom_model">Jeep Wrangler (classique pour le hors-piste)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="numero">2</p>
+                        </td>
+                        <td class="nom_model">Jeep Gladiator (pick-up avec des capacités tout-terrain)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="numero">3</p>
+                        </td>
+                        <td class="nom_model">Jeep Cherokee (SUV polyvalent)</td>
+                    </tr>
+                </table>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

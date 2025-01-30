@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Antonio RANDRIANARISON</title>
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="section-1 wd-40 txt-center">
+            <div class="position">
+                <img src="{% static 'main/images/Antonio.jpg'%}" alt="" class="mon-image">
+                <h1>Antonio RANDRIANARISON</h1>
+                <h2 class="color-lightgray mb-29 sous-titre">Developpeur Freelance | 4 ans d'experience</h2>
+                <div class="mb-29">
+                    <a href="" class="btn-contact">Contactez-moi</a>
+                </div>
+            </div>
+            <canvas id="vectorCanvas"></canvas>
+        </div>
+        <div class="section-2 wd-60">
+            <p class="txt-center color-lightgray">Je developpe vos Projet Web ou Application Mobile iOS/Android de A a Z
+            </p>
+            <hr>
+            <h2 class="txt-center portfolio-title">Portfolio</h2>
+            <div class="container-portfolio">
+                <table class="wd-100 ">
+                    <tr class="color-lightgray section-titre">
+                        <th align="left" class="wd-20">Titre</th>
+                        <th align="left" class="wd-30">Lien</th>
+                        <th align="left" class="wd-50">Description</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="portfolio">
+                <table class="wd-100">
+                    <tr>
+                        <td class="project-title wd-20">Cuteness Overload</td>
+                        <td><a href="{% url 'cuteness-overload:index' %}" class="portfolio-link wd-30">www.cuteness-overload.com</a></td>
+                        <td class="portfolio-description wd-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Culpa,
+                            dolorum.</td>
+                    </tr>
+                    <tr>
+                        <td class="project-title wd-20">SCM</td>
+                        <td><a href="{% url 'scm:index' %}" class="portfolio-link wd-30">www.scm.com</a></td>
+                        <td class="portfolio-description wd-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Culpa,
+                            dolorum.</td>
+                    </tr>
+                    <tr>
+                        <td class="project-title wd-20">Pizza Mama</td>
+                        <td><a href="{% url 'menu:index' %}" class="portfolio-link wd-30">www.pizzamama.com</a></td>
+                        <td class="portfolio-description wd-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Culpa,
+                            dolorum.</td>
+                    </tr>
+                    <tr>
+                        <td class="project-title">Jeep</td>
+                        <td><a href="{% url 'jeep:index' %}" class="portfolio-link">www.jeep.com</a></td>
+                        <td class="portfolio-description">Un Jeep lover conquiert tous les terrains avec aisance. Chaque
+                            trajet devient une nouvelle aventure.</td>
+                    </tr>
+                  
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'main/script.js' %}">
+    </script>
+</body>
+
+</html>

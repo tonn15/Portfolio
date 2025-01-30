@@ -1,0 +1,90 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: white;
+  background-color: #ef4e21;
+  display: inline-block;
+  padding: 16px 99px;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+body {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("images/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+}
+div.logo {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  color: withe;
+  color: white;
+  font-size: 41px;
+  padding: 16px;
+}
+.title-pizza {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.spacing-pizza {
+  color: white;
+  width: 46%;
+}
+.ingredient {
+  margin-top: -18px;
+  color: antiquewhite;
+  font-size: 12px;
+  width: 175px;
+}
+.align-pizza {
+  padding: 40px;
+  border-radius: 20px;
+}
+div.bg-list-pizza {
+  background-color: #00000061;
+  display: inline-block;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: lightgray;
+  margin: 0;
+}
+.txt-l {
+  text-align: left;
+}
+.txt-r {
+  text-align: right;
+}
+.wd-100 {
+  width: 100%;
+}
+.price-pizza {
+  color: #c4e46d;
+  font-weight: bold;
+}
+.no-price-pizza {
+  color: #ef4e21;
+  font-size: 12px;
+  text-align: center;
+  display: inline;
+}
+.wd-40 {
+  width: 40%;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+.vegetarienne {
+  color: white;
+  background: #ef4e21;
+  font-size: 10px;
+  border-radius: 6px;
+  padding: 3px 16px;
+  text-transform: uppercase;
+}
