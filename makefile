@@ -1,0 +1,1 @@
+web: ginicorn porfolio.wsgi:application
