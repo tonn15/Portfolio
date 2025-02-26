@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mon-portfolio
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn mon_projet.wsgi:application
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
