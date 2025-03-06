@@ -1,0 +1,140 @@
+:root {
+  --color-1: #212529;
+  --color-2: #07154a;
+}
+
+.an-top-nav-header-items {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+.an-top-nav-header {
+  background-color: var(--color-1);
+  border-radius: 0 75px 0;
+}
+.an-header {
+  background: url("../images/banner-bg.png") no-repeat center center;
+  background-size: cover;
+}
+.an-wd-75 {
+  width: 75% !important;
+}
+.overfolw-auto {
+  overflow: auto;
+}
+.an-caroussel-title {
+  font-size: 50px;
+  top: -80px;
+  position: relative;
+  font-weight: 900;
+}
+.an-caroussel-btn {
+  position: relative;
+  top: -55px;
+}
+
+.an-caroussel-tools {
+  height: 350px;
+  width: 100%;
+}
+.margin-0-15 {
+  margin: 0 15%;
+}
+.mb-55 {
+  margin-bottom: 55px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.h {
+  height: 300px;
+}
+.an-footer {
+  background-color: var(--color-1);
+}
+.an-link-item {
+  text-decoration: none;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: var(--color-1) !important;
+}
+.m-0 {
+  margin: 0 !important;
+}
+.an-height-50 {
+  height: 50px;
+}
+.an-border-radius-0 {
+  border-radius: 0;
+}
+.an-container-product {
+  background: #bfb0b44f;
+  padding: 10px;
+  border-radius: 5px;
+  padding: 0 28px 0 28px;
+}
+div.dropdown-menu {
+  left: -69px;
+  border-radius: 0 !important;
+}
+.an-top-details {
+  position: absolute;
+  background: #00000082;
+  color: white;
+  padding: 31px;
+  bottom: 0px;
+  width: 100%;
+}
+.slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+}
+.an-card {
+  width: 175px;
+  height: 350px;
+  box-shadow: 0 0 8px -4px;
+}
+.an-card-details {
+  width: 175px;
+  box-shadow: 0 0 8px -4px;
+}
+.an-card-details-top {
+  width: 500px;
+  box-shadow: 0 0 8px -4px;
+}
+.slider-nav {
+  width: 500px !important;
+}
+.slider-nav .an-card-details {
+  width: 110px;
+}
+.an-categorie-images {
+  width: 175px !important;
+  border-radius: 50%;
+}
+
+.an-card-body {
+  position: relative;
+  top: 0;
+  font-size: 13px !important;
+}
+
+.an-card-body hr {
+  margin: 0 !important;
+}
+
+.an-text-right {
+  text-align: right !important;
+}
+
+.an-container {
+  margin: 0 28px 0 28px;
+}
+.an-top {
+  position: relative;
+}
+.an-display-none {
+  display: none !important;
+}
