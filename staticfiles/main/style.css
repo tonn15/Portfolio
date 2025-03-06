@@ -8,7 +8,7 @@
 }
 body,
 html {
-  background: url("images/bg.jpg") no-repeat center center fixed;
+  background: url("images/bg.webp") no-repeat center center fixed;
   background-size: cover;
 }
 canvas {
@@ -142,7 +142,7 @@ div.section-1 .sous-titre {
   body,
   html {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("images/bg.jpg") no-repeat center center fixed;
+      url("images/bg.webp") no-repeat center center fixed;
     background-size: cover;
   }
   .container {
